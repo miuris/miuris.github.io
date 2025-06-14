@@ -1,1 +1,39 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script> 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="styles" href="https://fonts.google.com/specimen/Outfit">
+  </head>
+  <title>Frontend Mentor | QR code component</title>
+<main>
+  <body class="bg-slate-300 h-screen flex justify-center items-center p-4 ">
+  <!--parent-up(main)entire-page^/ child-down(body)
+  -qrcardcontainer-(background-color, screen-height, flexbox, alignment of container/ items on grid)-->
+    <div class="bg-white rounded-2xl p-4 shadow-xl max-w-sm w-full ">
+      <div class="mb-10">
+        <img class="w-full rounded-2xl" src="images/image-qr-code.png" alt="QR Code"  />
+    </div>
+  <!--once I added the mb utility class to the qr container,
+  I was able to add the text inside the qr card- qrcard text configs(below)-->
+    <div class="text-center px-2 pb-2">
+        <h2 class="text-slate-900 text-xl font-bold mb-8"> 
+            Improve your front-end skills by building projects break 
+        </h2>
+        <p class="text-slate-500 leading-relaxed">
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        </p>
+    </div>
+      </div> 
+
+
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Miuris Gutierrez</a>.
+</div>
+</div>
+</body>
+</main>
+</html>
