@@ -6,18 +6,32 @@ header {
     background-image: url("images/pattern-bg-desktop.png");
     background-size: cover;
     text-align: center;
+    flex-direction: column;
+    display: flex;
 }
 .ipaddress-input {
     width: 700px;
-    height: 60px;
-    
+    display: flex;
+    height: 70px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-inline: auto;
+    bottom: 250px;
 }
 input {
     width: 85%;
+    padding-inline: 20px;
+    font-family: rubik;
+    font-size: 22px;
 }
-input::display-container {
-    color: hsl(0, 0%, 59%);
-
+input:focus {
+    outline: none;
+    border: none;
+}
+input::placeholder {
+    color:  hsl(0, 0%, 59%);
+    font-size: 22px;
+    font-family: rubik;
 }
 h1 {
     font-family: Rubik, sans-serif;
@@ -30,14 +44,44 @@ h1 {
     font-style: normal;
 }
 .display-container {
-    height: 100px;
-    position: absolute;
+    height: 200px;
+    width: 200px;
     background-color: white;
     width: 1220px;
     border-radius: 22px;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-inline: 40px;
+    gap: 20px;
+    position: relative;
+}
+.display {
+    width: 250px;
+    border-left: 1px solid gray;
 }
 .icon-arrow {
-    width: 5%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
 }
+.pl-title {
+    font-family: rubik;
+    font-weight: 600;
+    color: hsl(0, 0%, 59%);
+    width: 250px;
+    text-align: center;
+    font-size: 18px;
+}
+.info {
+    font-size: 2rem;
+    font-family: Rubik;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+
+
+@media (max-width: 1440px)
