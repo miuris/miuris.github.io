@@ -10,9 +10,12 @@
   <script src="/path/to/leaflet.js"></script>
   <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
   <script src="node_modules/leaflet/dist/leaflet.js"></script>
- <title>IP Address Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>IP Address Tracker</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-<!--   <style>
+  <!--   <style>
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -21,13 +24,40 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
-  </style> --> -->
+  </style> -->
 </head>
-
 <body>
   <main>
     <header>
       <h1>IP Address Tracker</h1>
+      <div class="ipaddress-input">
+        <input type="text" placeholder="Search for any IP address or domain">
+        <div>
+          <img class="icon-arrow" src="/images/icon-arrow.svg" alt="icon of an arrow">
+        </div>
+        <div class="display-container">
+          <div class="display">
+            <div>IP Address</div>
+            <div>placeholder</div>
+          </div>
+          <div class="display-container">
+            <div class="display">
+              <div>Location</div>
+              <div>placeholder</div>
+            </div>
+            <div class="display-container">
+              <div class="display">
+                <div>Timezone</div>
+                <div>placeholder</div>
+              </div>
+              <div class="display-container">
+                <div class="display">
+                  <div>ISP</div>
+                  <div>placeholder</div>
+                </div>
+              </div>
+
+            </div>
     </header>
   </main>
 
