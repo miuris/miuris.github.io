@@ -5,7 +5,7 @@ import "leaflet/dist/leaflet.css";
 
 
 
-<section>
+{/* <section>
     <div className="absolute -z-10">
         <img src="/images/pattern-bg-desktop.png" alt="Blueprint layout" className="w-full">
             IP Address Tracker
@@ -19,6 +19,6 @@ import "leaflet/dist/leaflet.css";
             ISP
 
     </div>
-</section>    
+</section>     */}
   
   
