@@ -5,5 +5,3 @@ const firstTile=L.tileLayer(tileLayer,attribution)
 firstTile.addTo(map)
 let marker = L.marker([51.505, -0.09])
 marker.addTo(map)
-
-function
