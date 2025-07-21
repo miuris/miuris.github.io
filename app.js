@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 const map = L.map('map').setView([51.505, -0.09, 13]);
-=======
-const map = L.map('map').setView([51.505, -0.09], 13);
->>>>>>> a7c30dce0aae22d1df472527c59065293956a055
 const tileLayer = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
 const attribution = { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}
 const firstTile=L.tileLayer(tileLayer,attribution)
@@ -10,11 +6,7 @@ firstTile.addTo(map)
 let marker = L.marker([51.505, -0.09])
 marker.addTo(map)
 
-<<<<<<< HEAD
-=======
 
->>>>>>> a7c30dce0aae22d1df472527c59065293956a055
-/* fetch function*/
 function showIPInfo(ip = '') {
     const apiKey = 'live_o7ttAKUo3nsruHxzx0rtRwLpBB0D2x6713LJMTwndnwiom17LiHWGfbQWFWaEVBX';
     const url = `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKey}&ipAddress=${ip}`;
@@ -26,15 +18,11 @@ const info = response.json();
 console.log(info);
 }
 
-
-
-<<<<<<< HEAD
-/* display function */
 function updateDisplayAndMap(data) {
 const titles = document.getElementsByClassName('pl-title');
 const infos = document.getElementsByClassName('info');
 
-/* this section takes the indexes and updates info displayed*/
+
 
 infos[0].textContent = data.ip;
 infos[1].textContent = data.location;
@@ -48,7 +36,7 @@ if (data.lat && data.lng) {
 }
 
 
-/* eventlistenner function */
+
 const input = document.querySelector('.ipaddress-input input');
 const button = document.querySelector('.arrowBtn');
 
@@ -59,28 +47,3 @@ button.addEventListener('click', function(e) {
 
     showIPInfo(ip);
 });
-
-/* this code didn't execute. 
-document.getElementsByClassName('ipaddress-input').addEventListener(onclick, e)
-    e.preventDefault();
-    const ip = document.getElementsByClassName('icon-arrow').value.trim();
-    if (!ip) return alert('Please enter valid IP Address.');
-    const info = fetchshowIPInfo(ip);
-    if (info) updateDisplayAndMap(info);
-;
-
-showIPInfo(ip);
-=======
-
-
-
-
-
-
-
-/* display function */
-
-
-
-/* eventlistenner function */
->>>>>>> a7c30dce0aae22d1df472527c59065293956a055
