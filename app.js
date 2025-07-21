@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const map = L.map('map').setView([51.505, -0.09, 13]);
+=======
+const map = L.map('map').setView([51.505, -0.09], 13);
+>>>>>>> a7c30dce0aae22d1df472527c59065293956a055
 const tileLayer = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
 const attribution = { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}
 const firstTile=L.tileLayer(tileLayer,attribution)
@@ -6,6 +10,10 @@ firstTile.addTo(map)
 let marker = L.marker([51.505, -0.09])
 marker.addTo(map)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a7c30dce0aae22d1df472527c59065293956a055
 /* fetch function*/
 function showIPInfo(ip = '') {
     const apiKey = 'live_o7ttAKUo3nsruHxzx0rtRwLpBB0D2x6713LJMTwndnwiom17LiHWGfbQWFWaEVBX';
@@ -20,6 +28,7 @@ console.log(info);
 
 
 
+<<<<<<< HEAD
 /* display function */
 function updateDisplayAndMap(data) {
 const titles = document.getElementsByClassName('pl-title');
@@ -61,3 +70,17 @@ document.getElementsByClassName('ipaddress-input').addEventListener(onclick, e)
 ;
 
 showIPInfo(ip);
+=======
+
+
+
+
+
+
+
+/* display function */
+
+
+
+/* eventlistenner function */
+>>>>>>> a7c30dce0aae22d1df472527c59065293956a055
