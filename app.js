@@ -1,4 +1,4 @@
-const ipaddressInput = document.getElementById('ipaddress-input');
+const ipaddressInput = document.querySelector('.ipaddress-input input');
 const arrowBtn = document.getElementById('arrowBtn');
 const ipText = document.getElementById('ip');
 const locationText = document.getElementById('location');
