@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: Rubik, sans-serif;
-  
+
 }
 
 header {
@@ -37,6 +37,7 @@ input {
     padding-inline: 20px;
     font-size: 22px;
 }
+
 h1 {
     font-family: Rubik, sans-serif;
     font-size: 3rem;
@@ -58,15 +59,19 @@ h1 {
     gap: 1rem;
     height: 13rem;
     box-shadow: 1px 1px;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
-    
 }
 
 .display-container div {
     width: auto;
-    border-right: 1px solid gray;
-    height: 2rem;
+    flex: 1;
+    border-right: 1px solid grey;
+    height: 3rem;
+    text-align: center;
+}
+.display-container div:nth-last-child(-n+1) {
+    border-right: none;
 }
 
 .icon-arrow svg {
@@ -86,13 +91,14 @@ h1 {
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
 }
+
 #map {
     height: 80vh;
     z-index: 1;
 }
 
 @media screen and (min-width: 480px) {
-     .display-container {
-        height: auto;   
-}
+    .display-container {
+        height: auto;
+    }
 }
